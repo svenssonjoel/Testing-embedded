@@ -127,6 +127,9 @@
           "PCW_CLK3_FREQ": {
             "value": "10000000"
           },
+          "PCW_CORE0_IRQ_INTR": {
+            "value": "1"
+          },
           "PCW_CRYSTAL_PERIPHERAL_FREQMHZ": {
             "value": "33.33333"
           },
@@ -591,6 +594,9 @@
           },
           "PCW_USB_RESET_SELECT": {
             "value": "Share reset pin"
+          },
+          "PCW_USE_FABRIC_INTERRUPT": {
+            "value": "1"
           },
           "PCW_WDT_PERIPHERAL_ENABLE": {
             "value": "1"
@@ -1131,6 +1137,9 @@
           "C_GPIO_WIDTH": {
             "value": "1"
           },
+          "C_INTERRUPT_PRESENT": {
+            "value": "1"
+          },
           "C_IS_DUAL": {
             "value": "1"
           }
@@ -1212,6 +1221,12 @@
           "axi_gpio_0/gpio2_io_o",
           "GPOUT",
           "axi_timer_0/capturetrig0"
+        ]
+      },
+      "axi_gpio_0_ip2intc_irpt": {
+        "ports": [
+          "axi_gpio_0/ip2intc_irpt",
+          "processing_system7_0/Core0_nIRQ"
         ]
       }
     },
